@@ -1,0 +1,13 @@
+#canvas{
+    width: 600px; 
+    padding: 200px 200px;
+    text-align: center;
+    border: 1px solid #333;
+}
+.addColor{
+    color: red;
+    background-color: yellow;
+}
+.disappear{
+    visibility: hidden;
+}

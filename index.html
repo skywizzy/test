@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="vue_app">
+            <p>{{ name }} is working...</p><br>
+            <a :href="website">Website</a><br>
+            <button @dblclick="subFive(5)">Y--</button>
+            <button @click="sub">-</button><br>
+            <input type="number" v-model="score" @keyup.enter="keyboardEvent" :value="score" name="" id="">
+            <span>{{ score }}</span><br>
+            <button @click="add">+</button>
+            <button @dblclick="addFive(5)">Y++</button><br>
+            <p v-html="anchorTag"></p>
+            <button @click = "design = !design">design</button>
+            <button @click = "action = !action">action</button>
+            <span :class="compClasses">skywizzy</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span v-if = "design">v-if</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span v-show = "action">v-show</span><br><br>
+            <div id="canvas" @mousemove="updateXY">
+                ( {{ x }} , {{ y }} )
+            </div><br>
+            <a @click.prevent="click" href="http://google.com">Google</a>
+        </section>
+    </main>
+    <script src="vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
